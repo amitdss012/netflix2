@@ -55,6 +55,13 @@ const Navbar = () => {
               </button>
               <button
                 className="ml-4 text-white px-3 py-2 rounded border bg-red-600 border-red-600 hover:bg-white hover:text-black transition duration-300"
+                onClick={() => navigate("/search")}
+              >
+                <i className="fa-solid fa-magnifying-glass md:hidden"></i>
+                <p className="hidden md:block">Search</p>
+              </button>
+              <button
+                className="ml-4 text-white px-3 py-2 rounded border bg-red-600 border-red-600 hover:bg-white hover:text-black transition duration-300"
                 onClick={() => navigate("/sign-up")}
               >
                Signup
