@@ -22,53 +22,53 @@ const Navbar = () => {
       </Link>
 
       {
-          user? (
-            <div>
+        user ? (
+          <div>
             <button
-                className="text-white px-3 py-2 rounded hover:bg-red-600 transition duration-300"
-                onClick={handleLogout}
-              >
-                Logout
-              </button>
-              <button
-                className="ml-4 text-white px-3 py-2 rounded border bg-red-600 border-red-600 hover:bg-white hover:text-black transition duration-300"
-                onClick={() => navigate("/search")}
-              >
-                <i className="fa-solid fa-magnifying-glass md:hidden"></i>
-                <p className="hidden md:block">Search</p>
-              </button>
-              <button
-                className="ml-4 text-white px-3 py-2 rounded border bg-red-600 border-red-600 hover:bg-white hover:text-black transition duration-300"
-                onClick={() => navigate("/profile")}
-              >
-                <i className="fa-regular fa-user md:hidden"></i>
-                <p className="hidden md:block">Profile</p>
-              </button>
-            </div>
-          ) : (
-            <>
-              <button
-                className="text-white px-3 py-2 rounded hover:bg-red-600 transition duration-300"
-                onClick={() => navigate("/login")}
-              >
-                Sign In
-              </button>
-              <button
-                className="ml-4 text-white px-3 py-2 rounded border bg-red-600 border-red-600 hover:bg-white hover:text-black transition duration-300"
-                onClick={() => navigate("/search")}
-              >
-                <i className="fa-solid fa-magnifying-glass md:hidden"></i>
-                <p className="hidden md:block">Search</p>
-              </button>
-              <button
-                className="ml-4 text-white px-3 py-2 rounded border bg-red-600 border-red-600 hover:bg-white hover:text-black transition duration-300"
-                onClick={() => navigate("/sign-up")}
-              >
-               Signup
-              </button>
-            </>
-          )
-        }
+              className="text-white px-3 py-2 rounded hover:bg-red-600 transition duration-300"
+              onClick={handleLogout}
+            >
+              Logout
+            </button>
+            <button
+              className="ml-4 text-white px-3 py-2 rounded border bg-red-600 border-red-600 hover:bg-white hover:text-black transition duration-300"
+              onClick={() => navigate("/search")}
+            >
+              <i className="fa-solid fa-magnifying-glass md:hidden"></i>
+              <p className="hidden md:block">Search</p>
+            </button>
+            <button
+              className="ml-4 text-white px-3 py-2 rounded border bg-red-600 border-red-600 hover:bg-white hover:text-black transition duration-300"
+              onClick={() => navigate("/profile")}
+            >
+              <i className="fa-regular fa-user md:hidden"></i>
+              <p className="hidden md:block">Profile</p>
+            </button>
+          </div>
+        ) : (
+          <div>
+            <button
+              className="text-white px-3 py-2 rounded hover:bg-red-600 transition duration-300 text-sm"
+              onClick={() => navigate("/login")}
+            >
+              Sign In
+            </button>
+            <button
+              className="ml-4 text-white px-3 py-2 rounded border bg-red-600 border-red-600 hover:bg-white hover:text-black transition duration-300"
+              onClick={() => navigate("/search")}
+            >
+              <i className="fa-solid fa-magnifying-glass md:hidden text-[10px]"></i>
+              <p className="hidden md:block">Search</p>
+            </button>
+            <button
+              className="ml-4 text-white px-3 py-2 rounded border bg-red-600 text-sm border-red-600 hover:bg-white hover:text-black transition duration-300"
+              onClick={() => navigate("/sign-up")}
+            >
+              Signup
+            </button>
+          </div>
+        )
+      }
     </nav>
   );
 };
