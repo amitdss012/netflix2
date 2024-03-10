@@ -79,9 +79,9 @@ const url = "https://api.themoviedb.org/3"
             >
               <HeroTailer movieId={movie?.id} />
             </p>
-            <button className="border-gray-400 ml-3 h-10 p-2 capitalize border">
+            {/* <button className="border-gray-400 ml-3 h-10 p-2 capitalize border">
               Watch Later
-            </button>
+            </button> */}
           </div>
           <p>{movie?.release_date}</p>
           <p className="mt-4 text-white">{movie?.overview}</p>
